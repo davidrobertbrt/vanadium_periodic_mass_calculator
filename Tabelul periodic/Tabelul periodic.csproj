@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D0AD15C-A143-4FC5-B6F3-AB5E3B01E193}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Tabelul_periodic</RootNamespace>
+    <AssemblyName>Vanadium</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalculatorMasaMoleculara.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CalculatorMasaMoleculara.Designer.cs">
+      <DependentUpon>CalculatorMasaMoleculara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GradientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\RotateLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Electron.cs" />
+    <Compile Include="Element.cs" />
+    <Compile Include="ElementKeyboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ElementKeyboard.Designer.cs">
+      <DependentUpon>ElementKeyboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDespre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDespre.Designer.cs">
+      <DependentUpon>FrmDespre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmViewElement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmViewElement.Designer.cs">
+      <DependentUpon>FrmViewElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalculatorGradNesaturare.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CalculatorGradNesaturare.Designer.cs">
+      <DependentUpon>CalculatorGradNesaturare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Importer.cs" />
+    <Compile Include="MainApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainApp.Designer.cs">
+      <DependentUpon>MainApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MenuButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource.cs" />
+    <Compile Include="SearchModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchModule.Designer.cs">
+      <DependentUpon>SearchModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Strat.cs" />
+    <Compile Include="TabBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabBar.Designer.cs">
+      <DependentUpon>TabBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabelPeriodic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabelPeriodic.Designer.cs">
+      <DependentUpon>TabelPeriodic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Taskbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Taskbar.Designer.cs">
+      <DependentUpon>Taskbar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CalculatorMasaMoleculara.resx">
+      <DependentUpon>CalculatorMasaMoleculara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElementKeyboard.resx">
+      <DependentUpon>ElementKeyboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDespre.resx">
+      <DependentUpon>FrmDespre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmViewElement.resx">
+      <DependentUpon>FrmViewElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculatorGradNesaturare.resx">
+      <DependentUpon>CalculatorGradNesaturare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainApp.resx">
+      <DependentUpon>MainApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchModule.resx">
+      <DependentUpon>SearchModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabBar.resx">
+      <DependentUpon>TabBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabelPeriodic.resx">
+      <DependentUpon>TabelPeriodic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Taskbar.resx">
+      <DependentUpon>Taskbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Debug\Vanadium.exe.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Fonts\Helvetica-Bold.ttf" />
+    <None Include="Fonts\Helvetica-BoldOblique.ttf" />
+    <None Include="Fonts\helvetica-compressed-5871d14b6903a.otf" />
+    <None Include="Fonts\helvetica-light-587ebe5a59211.ttf" />
+    <None Include="Fonts\Helvetica-Oblique.ttf" />
+    <None Include="Fonts\helvetica-rounded-bold-5871d05ead8de.otf" />
+    <None Include="Fonts\Helvetica.ttf" />
+    <None Include="Resources\Helvetica-Bold.ttf" />
+    <None Include="Resources\Helvetica-BoldOblique.ttf" />
+    <None Include="Resources\helvetica-compressed-5871d14b6903a.otf" />
+    <None Include="Resources\helvetica-light-587ebe5a59211.ttf" />
+    <None Include="Resources\Helvetica-Oblique.ttf" />
+    <None Include="Resources\helvetica-rounded-bold-5871d05ead8de.otf" />
+    <None Include="Resources\Helvetica.ttf" />
+    <None Include="Resources\SEGMDL2.TTF" />
+    <None Include="Resources\SEGOEPR.TTF" />
+    <None Include="Resources\SEGOEPRB.TTF" />
+    <None Include="Resources\SEGOESC.TTF" />
+    <None Include="Resources\SEGOESCB.TTF" />
+    <None Include="Resources\SEGOEUI.TTF" />
+    <None Include="Resources\SEGOEUIB.TTF" />
+    <None Include="Resources\SEGOEUII.TTF" />
+    <None Include="Resources\SEGOEUIL.TTF" />
+    <None Include="Resources\SEGOEUISL.TTF" />
+    <None Include="Resources\SEGOEUIZ.TTF" />
+    <None Include="Resources\SEGUIBL.TTF" />
+    <None Include="Resources\SEGUIBLI.TTF" />
+    <None Include="Resources\SEGUIEMJ.TTF" />
+    <None Include="Resources\SEGUIHIS.TTF" />
+    <None Include="Resources\SEGUILI.TTF" />
+    <None Include="Resources\SEGUISB.TTF" />
+    <None Include="Resources\SEGUISBI.TTF" />
+    <None Include="Resources\SEGUISLI.TTF" />
+    <None Include="Resources\SEGUISYM.TTF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\hidrogen.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\elemente.txt" />
+    <Content Include="bin\Debug\hidrogen.PNG" />
+    <Content Include="bin\Debug\Vanadium.exe" />
+    <Content Include="bin\Debug\Vanadium.pdb" />
+    <Content Include="bin\Debug\VanadiumDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\VanadiumDB_log.ldf">
+      <DependentUpon>VanadiumDB.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Icons\despre-frm.png" />
+    <None Include="Icons\feedback-frm.png" />
+    <None Include="Icons\grad-de-nesaturare.png" />
+    <None Include="Icons\masa-moleculara-frm.png" />
+    <None Include="Icons\tabel-solubilitate-frm.png" />
+    <None Include="Icons\sigla-128x128.png" />
+    <None Include="Icons\frm-news.png" />
+    <None Include="Icons\frm-actualizari.png" />
+    <None Include="Icons\sigla.png" />
+    <None Include="Images\despre.jpg" />
+    <None Include="Icons\frm-clipboard.png" />
+    <None Include="Icons\icons8-keyboard-64.png" />
+    <None Include="Icons\icons8-keyboard-32.png" />
+    <None Include="Icons\icons8-calculator-96.png" />
+    <None Include="Icons\icons8-calculator-32.png" />
+    <None Include="Icons\sterge-istoric.png" />
+    <None Include="Icons\istoric.png" />
+    <None Include="Icons\formule.png" />
+    <None Include="Icons\formule-32px.png" />
+    <None Include="Icons\wikipedia.png" />
+    <None Include="Icons\frm-search.png" />
+    <None Include="Icons\frm-search-16.png" />
+    <Content Include="Images\noutati.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
