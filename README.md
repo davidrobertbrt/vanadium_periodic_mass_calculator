@@ -89,7 +89,7 @@ H2O for example computes the molecular mass of water. The app supports an infini
 **This project is no longer under active development.**
 
 ## Thank you to
-- Rareș Niță (https://github.com/Rarestein) for proposed UI layout and testing
+- Rareș Niță (https://github.com/raresnita) for proposed UI layout and testing
 - Lazăr Ionuț Radu (https://github.com/Lazar-Ionut-Radu) for testing
 - Drugea Diana for app logo
 
